@@ -6,6 +6,7 @@ body {
     color: #333;
     background-color: #f4f4f4;
     }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -14,53 +15,101 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
 h1,
 h2 {
-color: #007bff;
+color: #00997b;
 }
-.header {
+
+candidate {
     text-align: center;
 }
-.header h1 {
+candidate h1 {
     margin: 10px 0;
+    font-size:  1.5rem;
 }
+
 .contact {
     margin: 10px 0;
-    font-size: 14px;
+    font-size: .8rem;
 }
 .contact a {
-    color: #007bff;
+    color: #00997b;
     text-decoration: none;
 }
-.section {
-    margin: 20px 0;
+
+section {
+    margin: 30px 0px 10px 0px;
 }
-.section h2 {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+section h2 {
+    margin-bottom: 5px;
+    border-bottom: 2px solid #00997b;
     padding-bottom: 5px;
+    font-size: 1rem;
 }
+
 .item {
     margin-bottom: 15px;
 }
-.item h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #555;
-}
 .item p {
     margin: 5px 0;
-    font-size: 14px;
+    font-size: .75rem;
 }
+
+company,
+degree-school,
+project {
+    display: inline;
+    margin: 0;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+dates {
+    display: inline;
+    float:  right;
+    margin: 0;
+    font-size:.8rem;
+    font-weight: bold;
+}
+role {
+    display: block;
+    margin: 0;
+    font-size:.75rem;
+}
+
+grad {
+    display: inline;
+    float: right;
+    margin: 0;
+    font-size:.8rem;
+}
+
 .skills ul {
     list-style: none;
     padding: 0;
 }
 .skills ul li {
     display: inline-block;
-    background: #007bff;
+    background: #00997b;
     color: #fff;
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
     border-radius: 4px;
     }
+
+.expertise ul {
+    padding: 0px;
+    margin-top: 0px;
+
+}
+.expertise ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: .8rem;
+    background: #00997b;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 2px;
+    
+}
