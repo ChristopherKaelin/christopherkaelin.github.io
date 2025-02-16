@@ -106,10 +106,10 @@ grad {
 .expertise ul li {
     list-style: none;
     display: inline-block;
-    font-size: .8rem;
+    font-size: .667rem;
     background: #00997b;
     color: #fff;
-    padding: 2px 5px;
+    padding: 2px 5px 0px 5px; 
     border-radius: 2px;
     
 }
