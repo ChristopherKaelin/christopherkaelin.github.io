@@ -9,11 +9,10 @@ body {
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
 h1,
@@ -21,10 +20,10 @@ h2 {
 color: #00997b;
 }
 
-candidate {
-    text-align: center;
+.candidate {
+    margin-top: 0rem !important;
 }
-candidate h1 {
+.candidate h1 {
     margin: 10px 0;
     font-size:  1.5rem;
 }
@@ -39,7 +38,13 @@ candidate h1 {
 }
 
 section {
-    margin: 30px 0px 10px 0px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0rem 2rem 2rem 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(74, 255, 158, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 255, 0, 0.08);
+    backdrop-filter: blur(10px) brightness(1.2);
 }
 section h2 {
     margin-bottom: 5px;
@@ -53,14 +58,15 @@ section h2 {
 }
 .item p {
     margin: 5px 0;
-    font-size: .75rem;
+    font-size: .85rem;
 }
 
 company,
 degree-school,
 project {
     display: inline;
-    margin: 0;
+    margin: 10px 0px 0px 0px;
+    padding-top: 5px;
     font-size: .8rem;
     font-weight: bold;
 }
@@ -68,14 +74,13 @@ project {
 dates {
     display: inline;
     float:  right;
-    margin: 0;
-    font-size:.8rem;
+    font-size:.85rem;
     font-weight: bold;
 }
 role {
     display: block;
     margin: 0;
-    font-size:.75rem;
+    font-size:.85rem;
 }
 
 grad {
@@ -111,5 +116,36 @@ grad {
     color: #fff;
     padding: 2px 5px 0px 5px; 
     border-radius: 2px;
-    
+    text-decoration: none;
+}
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: #00997b;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a,
+.navigation ul li a:visited,
+.navigation ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.button {
+    position:fixed;
+    top: 20%;
+    color: #00997b;
+    text-align: center;
+    padding: 8px 0px;
+    margin-left: -35px;
+  }
+
+a.button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #00997b;
 }
