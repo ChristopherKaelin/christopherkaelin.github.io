@@ -1,5 +1,10 @@
+:root {
+    --button-background-color: #00997b;
+    --button-background-color-hover: #00997b88;
+}
 body {
     font-family: Arial, sans-serif;
+    font-size: .8rem;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -18,6 +23,10 @@ body {
 h1,
 h2 {
 color: #00997b;
+}
+
+h4 {
+    margin-bottom: 0px;
 }
 
 .candidate {
@@ -50,15 +59,54 @@ section h2 {
     margin-bottom: 5px;
     border-bottom: 2px solid #00997b;
     padding-bottom: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-.item {
-    margin-bottom: 15px;
+.navigation ul {
+    padding: 0px;
 }
-.item p {
-    margin: 5px 0;
-    font-size: .85rem;
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+}
+.navigation ul li a,
+.navigation ul li a:visited {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--button-background-color);
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a:hover  {
+    /* text-decoration: none; */
+    color: #000;
+    background-color: var(--button-background-color-hover);
+}
+
+a.top {
+    position:fixed;
+    top: 31%;
+    color: var(--button-background-color);
+    text-align: center;
+    padding: 8px 0px;
+    margin-left: -50px;
+    text-decoration: none;
+  }
+
+a.top:hover {
+    color: var(--button-background-color-hover);
+    text-decoration: none;
+}
+
+skillset {
+    display: block;
+    font-weight: bold;
+}
+skills {
+    display: block;
+    margin-bottom: 20px;
 }
 
 company,
@@ -67,85 +115,23 @@ project {
     display: inline;
     margin: 10px 0px 0px 0px;
     padding-top: 5px;
-    font-size: .8rem;
     font-weight: bold;
 }
 
 dates {
     display: inline;
     float:  right;
-    font-size:.85rem;
     font-weight: bold;
 }
+
 role {
     display: block;
-    margin: 0;
-    font-size:.85rem;
+    margin: 2px;
+    padding: 0px 0px 15px 0px;
 }
 
 grad {
     display: inline;
     float: right;
     margin: 0;
-    font-size:.8rem;
-}
-
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-.skills ul li {
-    display: inline-block;
-    background: #00997b;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0;
-    border-radius: 4px;
-    }
-
-.expertise ul {
-    padding: 0px;
-    margin-top: 0px;
-
-}
-.expertise ul li {
-    list-style: none;
-    display: inline-block;
-    font-size: .667rem;
-    background: #00997b;
-    color: #fff;
-    padding: 2px 5px 0px 5px; 
-    border-radius: 2px;
-    text-decoration: none;
-}
-
-.navigation ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 5px;
-    background: #00997b;
-    text-decoration: none;
-    color: #fff;
-}
-.navigation ul li a,
-.navigation ul li a:visited,
-.navigation ul li a:hover {
-    text-decoration: none;
-    color: #fff;
-}
-
-a.button {
-    position:fixed;
-    top: 20%;
-    color: #00997b;
-    text-align: center;
-    padding: 8px 0px;
-    margin-left: -35px;
-  }
-
-a.button:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #00997b;
 }
