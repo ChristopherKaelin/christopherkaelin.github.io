@@ -1,0 +1,20 @@
+project a {
+    margin-left: 10px;
+    padding: 2px 10px;
+    color: var(--prime-color);
+    border: 1px solid rgba(var(--prime-rgb), 0.3);
+}
+
+project a:hover {
+    background-color: rgba(var(--prime-rgb), 0.3);
+    text-decoration: none;
+}
+
+.item {
+    padding: 1rem 0 0 0;
+}
+
+.description {
+    font-weight: normal;
+    padding: 0.1rem 0 1rem 0;
+}

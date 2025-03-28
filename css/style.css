@@ -1,16 +1,22 @@
 :root {
-    --button-background-color: #00997b;
+    --prime-color: rgb(0, 75, 0);
+    --prime-rgb: 0, 75, 1;
+    --second-color: rgb(0, 105, 0);
+    --second-rgb: 0, 105, 0;
+    --button-background-color: #003a0e;
     --button-background-color-hover: #00997b88;
 }
+
 body {
     font-family: Arial, sans-serif;
     font-size: .8rem;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--prime-color);
     background-color: #f4f4f4;
-    }
+    background-attachment: fixed;
+}
 
 .container {
     max-width: 1024px;
@@ -18,11 +24,11 @@ body {
     padding: 20px;
     background: #fff;
     border-radius: 8px;
-    }
+}
 
 h1,
 h2 {
-color: #00997b;
+color: var(--prime-color);
 }
 
 h4 {
@@ -42,7 +48,7 @@ h4 {
     font-size: .8rem;
 }
 .contact a {
-    color: #00997b;
+    color: var(--prime-color);
     text-decoration: none;
 }
 
@@ -51,13 +57,13 @@ section {
     margin-bottom: 1.5rem;
     padding: 0rem 2rem 2rem 2rem;
     border-radius: 10px;
-    border: 1px solid rgba(74, 255, 158, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 255, 0, 0.08);
+    border: 1px solid rgba(var(--prime-rgb), 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 0 40px rgba(var(--prime-rgb), 0.08);
     backdrop-filter: blur(10px) brightness(1.2);
 }
 section h2 {
     margin-bottom: 5px;
-    border-bottom: 2px solid #00997b;
+    border-bottom: 2px solid var(--prime-color);
     padding-bottom: 5px;
     font-size: 1.2rem;
 }
@@ -74,21 +80,21 @@ section h2 {
 .navigation ul li a:visited {
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: var(--button-background-color);
+    background-color: var(--prime-color);
     text-decoration: none;
     color: #fff;
 }
 
 .navigation ul li a:hover  {
     /* text-decoration: none; */
-    color: #000;
-    background-color: var(--button-background-color-hover);
+    color: var(--prime-color);
+    background-color: rgba(var(--prime-rgb), 0.5);
 }
 
 a.top {
     position:fixed;
     top: 31%;
-    color: var(--button-background-color);
+    color: var(--prime-color);
     text-align: center;
     padding: 8px 0px;
     margin-left: -50px;
@@ -96,7 +102,7 @@ a.top {
   }
 
 a.top:hover {
-    color: var(--button-background-color-hover);
+    color: rgba(var(--prime-rgb), 0.25);
     text-decoration: none;
 }
 
@@ -138,5 +144,8 @@ grad {
 
 .sticky-header {
     position: sticky;
+    background-color: #fff;
+    width: 100%;
     top: 0;
+    z-index: 1000;
 }
