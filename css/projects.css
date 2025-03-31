@@ -1,11 +1,11 @@
-project a {
+.project a {
     margin-left: 10px;
     padding: 2px 10px;
     color: var(--prime-color);
     border: 1px solid rgba(var(--prime-rgb), 0.3);
 }
 
-project a:hover {
+.project a:hover {
     background-color: rgba(var(--prime-rgb), 0.3);
     text-decoration: none;
 }
