@@ -1,0 +1,151 @@
+:root {
+    --prime-color: rgb(0, 75, 0);
+    --prime-rgb: 0, 75, 1;
+    --second-color: rgb(0, 105, 0);
+    --second-rgb: 0, 105, 0;
+    --button-background-color: #003a0e;
+    --button-background-color-hover: #00997b88;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: .8rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--prime-color);
+    background-color: #f4f4f4;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0px auto 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+color: var(--prime-color);
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+.candidate {
+    margin-top: 0rem !important;
+}
+.candidate h1 {
+    margin: 10px 0;
+    font-size:  1.5rem;
+}
+
+.contact {
+    margin: 10px 0;
+    font-size: .8rem;
+}
+.contact a {
+    color: var(--prime-color);
+    text-decoration: none;
+}
+
+section {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0rem 2rem 2rem 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(var(--prime-rgb), 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 0 40px rgba(var(--prime-rgb), 0.08);
+    backdrop-filter: blur(10px) brightness(1.2);
+}
+section h2 {
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--prime-color);
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.navigation ul {
+    padding: 0px;
+}
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+}
+.navigation ul li a,
+.navigation ul li a:visited {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--prime-color);
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a:hover  {
+    /* text-decoration: none; */
+    color: var(--prime-color);
+    background-color: rgba(var(--prime-rgb), 0.5);
+}
+
+a.top {
+    position:fixed;
+    top: 31%;
+    color: var(--prime-color);
+    text-align: center;
+    padding: 8px 0px;
+    margin-left: -50px;
+    text-decoration: none;
+  }
+
+a.top:hover {
+    color: rgba(var(--prime-rgb), 0.25);
+    text-decoration: none;
+}
+
+skillset {
+    display: block;
+    font-weight: bold;
+}
+skills {
+    display: block;
+    margin-bottom: 20px;
+}
+
+company,
+degree-school,
+.project {
+    display: inline;
+    margin: 10px 0px 0px 0px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+dates {
+    display: inline;
+    float:  right;
+    font-weight: bold;
+}
+
+role {
+    display: block;
+    margin: 2px;
+    padding: 0px 0px 15px 0px;
+}
+
+grad {
+    display: inline;
+    float: right;
+    margin: 0;
+}
+
+.sticky-header {
+    position: sticky;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
