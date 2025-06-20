@@ -1,17 +1,17 @@
-/* Base styles - Mobile First */
 :root {
     --prime-color: rgb(0, 75, 0);
-    --prime-rgb: 0, 75, 1;
+    --prime-rgb: 0, 75, 0;
     --second-color: rgb(0, 105, 0);
     --second-rgb: 0, 105, 0;
     --button-background-color: #003a0e;
     --button-background-color-hover: #00997b88;
 }
 
+/* Base styles - Mobile First */
 body {
     font-family: Arial, sans-serif;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.4;
     margin: 0;
     padding: 0;
     color: var(--prime-color);
@@ -41,12 +41,12 @@ h2, h3, h4 {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     border-bottom: 2px solid var(--second-color);
     padding-bottom: 0.25rem;
     margin-top: 2rem;
@@ -72,8 +72,8 @@ a {
 }
 
 a:hover {
-    color: var(--button-background-color);
-    border-color: var(--button-background-color);
+    color: var(--button-background-color-hover);
+    border-color: var(--button-background-color-hover);
 }
 
 .contact ul {
@@ -83,25 +83,59 @@ a:hover {
 
 .contact li {
     margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
 }
+
+.contact li a {
+    display: block;
+}
+
+.closing span {
+    display: block;
+}
+
+
+/* Tablets/Small laptop styles - 360px and up */
+@media (min-width: 360px) {
+    body { font-size: 1rem; }
+    h1 { font-size: 1.35rem; }
+    h2 { font-size: 1.2rem; }
+
+    .container, .main-content {
+        max-width: 600px;
+        margin: 0 auto 2rem auto;
+        padding: 1.5rem;
+    }
+}
+
 
 /* Desktop styles - 768px and up */
 @media (min-width: 768px) {
+    body {font-size: 1.1rem;}
+    h1 {font-size: 1.45rem;}
+    h2 {font-size: 1.3rem};
+
     .container, .main-content {
         max-width: 1024px;
         margin: 0 auto 2rem auto;
         padding: 2rem;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
     header.site-header, footer.site-footer {
         padding: 2rem 1rem;
     }
+
+    .contact li {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }    
+
+    .closing {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem; 
+    }
+
 }
