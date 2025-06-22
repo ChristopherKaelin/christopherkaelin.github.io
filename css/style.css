@@ -12,15 +12,16 @@ body {
     font-family: Arial, sans-serif;
     font-size: 0.9rem;
     line-height: 1.4;
-    margin: 0;
+    max-width: 1024px;;
+    margin: 0 auto;
     padding: 0;
     color: var(--prime-color);
     background-color: #f4f4f4;
     background-attachment: fixed;
 }
 
-.container, .main-content {
-    margin: 0 1rem 2rem 1rem;
+.main-content {
+    margin: 0 1rem;
     padding: 1rem;
     background: #ffffff;
     border-radius: 8px;
@@ -76,6 +77,20 @@ a:hover {
     border-color: var(--button-background-color-hover);
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dashed white;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #c3ff4a;
+    text-decoration: none;
+    border-color: #c3ff4a;
+}
+
+
 .contact ul {
     list-style-type: none;
     padding: 0;
@@ -102,9 +117,8 @@ a:hover {
     h1 { font-size: 1.35rem; }
     h2 { font-size: 1.2rem; }
 
-    .container, .main-content {
-        max-width: 600px;
-        margin: 0 auto 2rem auto;
+    .main-content {
+        margin: 0 auto;
         padding: 1.5rem;
     }
 }
@@ -116,9 +130,8 @@ a:hover {
     h1 {font-size: 1.45rem;}
     h2 {font-size: 1.3rem};
 
-    .container, .main-content {
-        max-width: 1024px;
-        margin: 0 auto 2rem auto;
+    .main-content {
+        margin: 0 auto;
         padding: 2rem;
     }
 
